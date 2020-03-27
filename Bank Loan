@@ -1,0 +1,14 @@
+print('-='*20)
+print('\033[1;32mBANCO DO BRASIL, SETOR DE EMPRESTIMOS\033[m')
+print('-='*20)
+v = float(input('Qual o valor da casa?'))
+s = float(input('Qual é o seu salário?'))
+t = int(input('Em quantos anos você pretende pagar a casa?'))
+p =  v/(t*12) #valor mensal da prestação
+x = s*30/100
+
+if p > x:
+    print('\033[31mEmpréstimo negado\033[m')
+else:
+    print('Emprestimo aprovado!')
+    print('O valor da pretação é R${:.2f} mensais'.format(p))
